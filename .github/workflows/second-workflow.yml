@@ -1,0 +1,10 @@
+name: second-workflow
+on: workflow_dispatch
+jobs:
+  second-Workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greeting 
+        run: echo "hello people"
+      - name: grreting bye
+        run: echo "bye bye"
