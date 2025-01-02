@@ -1,0 +1,12 @@
+name: third workflow
+on: push
+jobs:
+  third-Workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install dependencies 
+        uses: checkout@v3
+      - name: install node
+        uses: actions/setup-node@v3
+      - name: run tests 
+        run: npm test
